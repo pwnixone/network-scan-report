@@ -1,0 +1,35 @@
+Port 53: DNS
+
+Port 80: HTTP
+
+Port 443: HTTPS
+
+Port 135: MSRPC
+
+Port 139: NetBIOS
+
+Port 445: SMB
+
+Port 5357: WSDAPI
+
+Port 5500: Hotline
+
+Port 7070: RealServer
+
+DNS (Port 53) risks: DNS spoofing, amplification attacks
+
+HTTP (Port 80) risks: Unencrypted traffic, web vulnerabilities
+
+HTTPS (Port 443) risks: Weak SSL/TLS configuration
+
+MSRPC (Port 135) risks: Remote code execution
+
+NetBIOS (Port 139) risks: Unauthorized access, info leakage
+
+SMB (Port 445) risks: Ransomware, remote exploits
+
+WSDAPI (Port 5357) risks: Device info exposure
+
+Hotline (Port 5500) risks: Unauthorized access
+
+RealServer (Port 7070) risks: Unauthorized media access
