@@ -1,0 +1,36 @@
+# Network Scan and Analysis Report
+
+## Overview
+
+This repository contains the results of a network scanning task performed using Nmap and Wireshark on a local network (192.168.1.0/24). The purpose was to discover open ports, identify services running on devices, and analyze network traffic for security assessment.
+
+## Files Included
+
+- `scan_results.txt` - Nmap TCP SYN scan output showing discovered hosts and open ports.
+- `capture.pcap` - Wireshark packet capture file during the Nmap scanning activity.
+- `report.md` (optional) - Summary report with findings and security recommendations.
+
+## Key Findings
+
+- Several devices on the network were found with open ports for services like DNS (53), HTTP/HTTPS (80/443), and Windows SMB/NetBIOS (135, 139, 445).
+- SMB-related ports pose common vulnerabilities and should be secured through patching and configuration.
+- Router interfaces exposed on HTTP/HTTPS ports should be secured with strong passwords and regular firmware updates.
+- Wireshark captures show TCP SYN and SYN-ACK packets representing the network handshake used to identify open ports.
+
+## Usage
+
+- Open `scan_results.txt` to view port scanning details.
+- Load `capture.pcap` in Wireshark to visualize network traffic.
+- Use the report for understanding network exposure and potential risks.
+
+## Recommendations
+
+- Regular patching and security hardening of network devices.
+- Disabling unnecessary services and ports.
+- Securing router and shared resources with strong authentication.
+- Network monitoring for unusual or malicious traffic.
+
+---
+
+*This project was conducted as part of a learning task for network reconnaissance and security awareness.*
+
